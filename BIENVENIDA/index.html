@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script src="js/clases.js"></script>
+    <script src="js/codigo.js"></script>
+    <link rel="stylesheet" href="css/cs.css">
+    <title>Bienvenido</title>
+</head>
+<body>
+       
+        <div id="contenedor">
+        <div id="cabezal" class="clearfix">
+              <img id="logo" src="http://chefblog.develotion.com/logochef.png" alt="logo">
+              <h2 id="hBienvenida"></h2>
+              <center><input type="button" value="Salir" id="btnSalir"></center>
+              <br><br>
+
+            <div id="divLogin">
+              <center>
+              <input type="text" id="txtUsuario" placeholder="Usuario">
+              <br>
+              <input type="password" id="txtPass" placeholder="Password">
+              <br>
+              <input type="button" value="INGRESAR" id="btnLogin">
+              <br>
+              <p id="pRespuesta"></p>
+              </center>
+           
+            </div>
+      
+            <div id="btnAdmin">
+              <ul id="navPrincipal">
+                <li>
+                  <a id="aCrear">Crear Receta</a>
+                </li>
+                <li>
+                  <a id="aLista">Lista Colaboradores</a>
+                </li>
+                <li>
+                  <a id="aRegistrar">Registar Colaborador</a>
+                </li>
+                <li>
+                  <a id="aReportes">Reportes</a>
+                </li>
+                
+              </ul>
+              </div>
+              <br>
+            </div><!-- FIN CABEZAL -->
+
+<div id="divContenido">
+        <div id="divIngresarRecetas">
+                <h2>Ingrese receta</h2><br>
+                <input type="text" id="txtTitulo" placeholder="Titulo"><br>
+                <input type="text" id="txtDuracion" placeholder="Duracion total"><br>
+                <input type="text" id="txtReceta" placeholder="Receta"><br>
+                <input type="file" value="Seleccion imagen" id="fileImagen"><br>
+                <input type="button" value="Guardar" id="btnGuardarReceta"><br>
+                <p id="pRecetaSubida"></p>
+                <br>
+                </div>
+
+        <div id="divBuscarReceta">
+              <h3>Busqueda de receta</h3>
+              <label for="txtBusqueda">Receta/Ingrediente:</label>
+              <input type="text" id="txtBusqueda" placeholder="Buscar"><br>
+              <input type="button" id="btnBuscar" value="Buscar"><br>
+              <p id="pBusqueda"></p>
+              
+            </div>
+            
+        <div id="divColaboradores">
+            <h2>Lista de colaboradores</h2>
+            <table id="tblColaboradores">
+
+            </table>
+          </div>
+              
+        <div id="divMuro">
+            <center>
+            </center>
+          </div>
+        
+        <div id="divRegistroColaborador">
+          <h3>Registre colaborador nuevo</h3><br>
+          <input type="text" placeholder="Nombre" id="txtRegistroNombre"><br>
+          <input type="text" placeholder="Apellido" id="txtRegistroApellido"><br>
+          <input type="button" value="Registrar" id="btnRegistrar">
+          <p id="pRegistroColaborador"></p>
+        </div>
+       
+            </div><!-- FIN CONTENIDO -->
+        <div id="pie">
+              <a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by freepik - www.freepik.com</a>
+            </div><!-- FIN PIE -->
+          </div><!-- FIN CONTENEDOR -->
+      
+</body>
+</html>
